@@ -77,6 +77,7 @@ function validarFormulario(){
             return false;
         }
     }
+    
 
     
 
