@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--favicon-->
+    <link rel="icon" href="../img/logo/logo_caos_new.png" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="../css//estilos_index.css" />
+    <title>caos_new</title>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+
+  <body class="color_fondo">
+    <div class="navegador">
+      <!--barra de navegacion-->
+      <nav class="navbar"></nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!--logotipo-->
+          <label for="" class="logo_tipo">
+            <a href=""><img src="../img/logo/logo_caos_new.png" alt="" /></a>
+          </label>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="login.html"
+                  >iniciar sesion</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="formulario.html"
+                  >registrate</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contacto.html"
+                  >contactanos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="galeria.html"
+                  >galeria</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  categoria
+                  <!--nombre despliegue-->
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Mascotas</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Calidad de Vida</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Internacional</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="busqueda"
+                aria-label="Search"
+              />
+              <div class="boton_var">
+                <button class="btn" type="submit">buscar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="carrusel">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+            src="../img/img_principal/noticia1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <div class="container">
+                <div class="txt_carrusel">
+                  <h5>
+                    Semana santa: ¿Qué comercios abrirán durante este fin de
+                    semana largo?
+                  </h5>
+                  <p>
+                    Revisa el horario de los malls durante este viernes, sábado
+                    y domingo.
+                  </p>
+                  <button type="button" class="btn_carrusel" onclick="redirect('pagina_noticias.html')" >
+                    LEER MAS
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../img/img_principal/portada_perros.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <div class="container">
+                <div class="txt_carrusel">
+                  <h5>Son los más amigables:</h5>
+                  <p>
+                    Las cinco razas de perros que mejor se llevan con los otros
+                    animales.
+                  </p>
+                  <button type="button" class="btn_carrusel">VER MAS</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+            src="../img/img_principal/noticia3.1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <div class="container">
+                <div class="txt_carrusel">
+                  <h5>Joven demanda a sus padres:</h5>
+                  <p>
+                    Sus padres Habían gastado el dinero de su educación En una
+                    lujosa boda para su hermano.
+                  </p>
+                  <button type="button" class="btn_carrusel">VER MAS</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <figure>
+          <img src="../img/img_principal/noticia1.jpg" />
+        </figure>
+        <div class="contenido">
+          <h3>
+            Semana santa: ¿Qué comercios abrirán durante este fin de semana
+            largo?
+          </h3>
+          <p>
+            Revisa el horario de los malls durante este viernes, sábado y
+            domingo.
+          </p>
+          <a href="pagina_noticias.html">LEER MAS</a>
+        </div>
+      </div>
+      <div class="card">
+        <figure>
+          <img src="../img/img_principal/portada_perros.jpg" />
+        </figure>
+        <div class="contenido">
+          <h3>Son los más amigables:</h3>
+          <p>
+            Las cinco razas de perros que mejor se llevan con los otros
+            animales.
+          </p>
+          <a href="#">LEER MAS</a>
+        </div>
+      </div>
+      <div class="card">
+        <figure>
+          <img src="../img/img_principal/noticia3.1.jpg" />
+        </figure>
+        <div class="contenido">
+          <h3>Joven demanda a sus padres:</h3>
+          <p>
+            Sus padres Habían gastado el dinero de su educación En una lujosa
+            boda para su hermano.
+          </p>
+          <a href="#">LEER MAS</a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js//index.js"></script>
+
+   
+  </body>
+</html>
