@@ -27,7 +27,8 @@ body{
 }
 .boton_var:hover{
     background:rgb(121, 10, 121) ;
-}
+} 
+
 /*galeria*/
 .container{
     display: flex;

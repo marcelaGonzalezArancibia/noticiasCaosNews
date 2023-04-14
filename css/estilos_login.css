@@ -17,6 +17,7 @@
     color: rgb(121, 10, 121);
      border-radius: 10px;
      BORDER: rgb(128,128,128) 1px dashed; FONT-SIZE: 8pt; FONT-FAMILY: Verdana;
+     height: 40px;
  }
  .boton_var:hover{
      background:rgb(121, 10, 121) ;

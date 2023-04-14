@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../img/logo/logo_caos_new.png" />
+
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/estilos_pag_noticia.css" />
-    <title>noticias</title>
+    <link rel="stylesheet" href="../css/galeria2.css" />
+    <link rel="icon" href="../img/logo/logo_caos_new.png" />
+    <title>galeria</title>
   </head>
-  <body class="color_fondo">
+  <body>
     <div class="navegador">
       <!--barra de navegacion-->
       <nav class="navbar"></nav>
@@ -43,26 +44,17 @@
                 >
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="formulario.html"
+                <a class="nav-link active" aria-current="page" href="formulario.html"
                   >registrate</a
                 >
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="contacto.html"
+                <a class="nav-link active" aria-current="page" href="contacto.html"
                   >contactanos</a
                 >
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="galeria.html"
+                <a class="nav-link active" aria-current="page" href="galeria.html"
                   >galeria</a
                 >
               </li>
@@ -106,72 +98,74 @@
       </nav>
     </div>
 
-    <!--noticia-->
-    <div class="noticia">
-      <div class="color_fondo2">
-        <div class="clearfix">
-          <div class="imagen">
+
+    <div class="btnLeft">
+      <button
+        type="button"
+        class="btn_volver"
+        onclick="redirect('pagina_noticias.html')">volver</button>
+    </div>
+    <section class="gallery min-vh-100">
+      <h1 class="titulo">galeria</h1>
+      <div class="container-lg">
+        <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+          <div class="col">
             <img
-              src="../img/calidad_de_vida/noticia_calidad_de_vida1.png"
-              class="col-md-6 float-md-end mb-3 ms-md-3"
-              alt="..."
+              src="../img/calidad_de_vida/noticia_calidad_de_vida3.jpg"
+              class="gallery-item"
+              alt="gallery"
             />
           </div>
-          <h1 class="titulo">
-            Semana Santa: Revisa el horario de los malls durante este viernes,
-            sábado y domingo.
-          </h1>
+          <div class="col">
+            <img
+              src="../img/calidad_de_vida/noticia_calidad_de_vida2.png"
+              class="gallery-item"
+              alt="gallery"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="../img/calidad_de_vida/noticia_calidad_de_vida1.png"
+              class="gallery-item"
+              alt="gallery"
+            />
 
-          <p class="parrafo">
-            En el marco de la Semana Santa, el comercio ya ha comenzado a
-            informar acerca de sus horarios, teniendo en cuenta que el viernes 7
-            y sábado 8 de abril serán días feriados. Algunos supermercados ya
-            comunicaron sobre cómo será su funcionamiento durante este fin de
-            semana. Al mismo tiempo, los malls del país han empezado a hacer lo
-            mismo a través de sus canales oficiales.
-          </p>
+           
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <h3 class="tituloh3">
-            El horario de los malls este viernes, sábado y domingo:
-          </h3>
-
-          <h2 class="tituloh2">Mall Costanera Center</h2>
-
-          <p class="parrafo">
-            este fin de semana. En cuanto al mall en sí, se indicó que las
-            grandes tiendas, locales, módulos y patios de comida estarán
-            cerrados este viernes 7 de abril. No obstante, los cines,
-            entretenimiento y restaurantes Mirador de Alto estarán abiertos
-            durante esa jornada. Por otro lado, el sábado 8 de abril el mall
-            atenderá en horario normal.
-          </p>
-
-          <h2 class="tituloh2">Mall Alto Las Condes</h2>
-
-          <p class="parrafo">
-            Por otra parte, Alto Las Condes publicó en su cuenta de Facebook que
-            las tiendas y patio de comida estarán cerrados este viernes 7 de
-            abril. En tanto, el sábado 8 y domingo 9 se mantendrá el horario
-            habitual de funcionamiento.
-          </p>
-
-          <h2 class="tituloh2">Mall Parque Arauco y Arauco Maipú</h2>
-
-          <p class="parrafo">
-            Mall Parque Arauco y Arauco Maipú señalaron que este jueves 6 de
-            abril atenderán entre las 10:00 y 20:30 horas. Sin embargo, el
-            viernes 7 de abril el mall estará cerrado (a excepción del cine y
-            algunos restaurantes que estarán operando en formato delivery y
-            presencial). En paralelo, el sábado 8 y domingo 9 el horario será de
-            11:00 a 20:00 horas (Boulevard hasta las 23:00 horas en Mall Parque
-            Arauco).
-          </p>
-          <div class="buton">
-            <a href="galeria2.html">VER GALERIA</a>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="gallery-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="../img/calidad_de_vida/noticia_calidad_de_vida3.jpg"
+              class="modal-img"
+              alt="modal img"
+            />
           </div>
         </div>
       </div>
     </div>
+   
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -183,6 +177,9 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/galeria2.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>
